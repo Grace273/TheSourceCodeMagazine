@@ -45,7 +45,7 @@ const StartPage = ({
 
         <a
           className="purple-text"
-          href="/TheSourceCodeMagazine-React/magazine-issues/issue1/issue1-ordered.pdf"
+          href="/magazine-issues/issue1/issue1-ordered.pdf"
         >
           <u>View PDF version</u>
         </a>
