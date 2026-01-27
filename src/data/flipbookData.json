@@ -1,67 +1,67 @@
 {
     "pages": [
         {
-            "src": "/magazine-issues/issue1/front-cover.jpg",
+            "src": "magazine-issues/issue1/front-cover.jpg",
             "alt": "front cover"
         },
         {
-            "src": "/magazine-issues/issue1/pg1.jpg",
+            "src": "magazine-issues/issue1/pg1.jpg",
             "alt": "pg1"
         },
         {
-            "src": "/magazine-issues/issue1/pg2.jpg",
+            "src": "magazine-issues/issue1/pg2.jpg",
             "alt": "pg2"
         },
         {
-            "src": "/magazine-issues/issue1/pg3.jpg",
+            "src": "magazine-issues/issue1/pg3.jpg",
             "alt": "pg3"
         },
         {
-            "src": "/magazine-issues/issue1/pg4.jpg",
+            "src": "magazine-issues/issue1/pg4.jpg",
             "alt": "pg4"
         },
         {
-            "src": "/magazine-issues/issue1/pg5.jpg",
+            "src": "magazine-issues/issue1/pg5.jpg",
             "alt": "pg5"
         },
         {
-            "src": "/magazine-issues/issue1/pg6.jpg",
+            "src": "magazine-issues/issue1/pg6.jpg",
             "alt": "pg6"
         },
         {
-            "src": "/magazine-issues/issue1/pg7.jpg",
+            "src": "magazine-issues/issue1/pg7.jpg",
             "alt": "pg7"
         },
         {
-            "src": "/magazine-issues/issue1/pg8.jpg",
+            "src": "magazine-issues/issue1/pg8.jpg",
             "alt": "pg8"
         },
         {
-            "src": "/magazine-issues/issue1/pg9.jpg",
+            "src": "magazine-issues/issue1/pg9.jpg",
             "alt": "pg9"
         },
         {
-            "src": "/magazine-issues/issue1/pg10.jpg",
+            "src": "magazine-issues/issue1/pg10.jpg",
             "alt": "pg10"
         },
         {
-            "src": "/magazine-issues/issue1/pg11.jpg",
+            "src": "magazine-issues/issue1/pg11.jpg",
             "alt": "pg11"
         },
         {
-            "src": "/magazine-issues/issue1/pg12.jpg",
+            "src": "magazine-issues/issue1/pg12.jpg",
             "alt": "pg12"
         },
         {
-            "src": "/magazine-issues/issue1/pg13.jpg",
+            "src": "magazine-issues/issue1/pg13.jpg",
             "alt": "pg13"
         },
         {
-            "src": "/magazine-issues/issue1/pg14.jpg",
+            "src": "magazine-issues/issue1/pg14.jpg",
             "alt": "pg14"
         },
         {
-            "src": "/magazine-issues/issue1/back-cover.jpg",
+            "src": "magazine-issues/issue1/back-cover.jpg",
             "alt": "back cover"
         }
     ]
