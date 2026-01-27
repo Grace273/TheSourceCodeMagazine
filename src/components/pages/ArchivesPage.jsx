@@ -32,7 +32,7 @@ const ArchivesPage = ({
         <div id="archives">
           <div id="archives-bg-overlay">
             <div class="prev-issue">
-              <a href="/TheSourceCodeMagazine-React/magazine-issues/issue1/issue1-ordered.pdf">
+              <a href="/magazine-issues/issue1/issue1-ordered.pdf">
                 <img
                   src="magazine-issues/issue1/front-cover.jpg"
                   alt="Cover of First issue"
