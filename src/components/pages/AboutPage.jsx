@@ -33,6 +33,16 @@ const AboutPage = ({
             impact of big tech's latest moves to spotlights on student stories
             and cool side projects.
           </p>
+          <br />
+          <br />
+          <p>Instagram</p>{" "}
+          <u>
+            <a href="https://www.instagram.com/thesourcecodemagazine/ ">
+              @thesourcecodemagazine
+            </a>
+          </u>{" "}
+          <br />
+          <br />
         </div>
         <h1 id="meet-the-team-text">MEET THE TEAM</h1>
         <MeetTheTeam />

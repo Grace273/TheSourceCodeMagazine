@@ -45,7 +45,7 @@ const StartPage = ({
 
         <a
           className="purple-text"
-          href="/magazine-issues/issue1/issue1-ordered.pdf"
+          href="/TheSourceCodeMagazine-React/magazine-issues/issue1/issue1-ordered.pdf"
         >
           <u>View PDF version</u>
         </a>
@@ -57,7 +57,7 @@ const StartPage = ({
             </h4>
             <br />
             <br />
-            * 12/2025: Issue 2 is coming December/January! New writers welcome!
+            * 01/2026: Issue 2 is coming March 2026! New writers welcome!
             <br />
             <br />* 08/2025: Find copies of our latest issue in the CSSU
             (BA2250)

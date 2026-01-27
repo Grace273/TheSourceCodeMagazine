@@ -30,16 +30,25 @@ const JoinUsPage = ({
 
         <div className="content-border-box">
           <p>
-            <b>Interested in contributing to the next issue?</b>
+            <b>
+              Interested in contributing to the next issue? Contribute your
+              ideas with{" "}
+            </b>
             <br />
-            <br />
-            Visit our Instagram{" "}
+            <u>
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEIO-XsQfqslDj9tHfJVGStxUMDNaOVgzMDRLTUxVVzhOMFhUNk1GRTkxUi4u">
+                this Microsoft Form
+              </a>
+            </u>{" "}
+            and visit the linktree in our instagram{" "}
             <u>
               <a href="https://www.instagram.com/thesourcecodemagazine/ ">
                 @thesourcecodemagazine
               </a>
             </u>{" "}
-            and join our Discord! We want to platform your voice to UofT!
+            to join our Discord!
+            <br />
+            <br /> We want to platform your voice to UofT!
           </p>
         </div>
 
