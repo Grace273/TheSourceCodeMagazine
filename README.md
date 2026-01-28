@@ -1,2 +1,2 @@
 # TheSourceCodeMagazine
-Visit the site here [https://thesourcecodemagazine.netlify.app/](url)
+Visit the site here [(https://thesourcecode.ca/)](url)
