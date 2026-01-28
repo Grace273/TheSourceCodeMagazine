@@ -1,2 +1,2 @@
 # TheSourceCodeMagazine
-Visit the site here [(https://thesourcecode.ca/)](url)
+Visit [thesourcecode.ca]([url](https://thesourcecode.ca/))) !
