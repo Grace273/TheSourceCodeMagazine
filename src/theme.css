@@ -1,0 +1,64 @@
+/* ==========================================================================
+   THEME CONFIG
+   Central place for colours, fonts, and shared constants.
+   Change a value here to restyle the whole site — nothing below this
+   file should need to hardcode a colour or font again.
+
+   Note: the mobile breakpoint (60em / ~960px) is repeated throughout
+   App.css as `@media (width <= 60em)`. CSS custom properties can't be
+   used inside a media query condition, so if you change the breakpoint
+   here, also update the `60em` literal wherever it appears in App.css.
+   ========================================================================== */
+
+:root {
+  /* ---- Fonts ---- */
+  --font-heading: "Rock Salt", sans-serif;
+  --font-body: 'Courier New', Courier, monospace;
+
+  /* ---- Breakpoints (see note above — not directly usable in @media) ---- */
+  --breakpoint-mobile: 60em;
+
+  /* ---- Core palette ---- */
+  --color-bg: #2C2930;           /* page/panel background */
+  --color-black: #000000;
+  --color-near-black: #151515;   /* sticky note text */
+
+  /* ---- Text ---- */
+  --color-text-body: #d4cecc;       /* content-border-box copy */
+  --color-text-muted: #C5BBB8;      /* footer, meet-the-team, archives captions */
+  --color-text-purple: #96a2c9;     /* .purple-text */
+  --color-text-purple-link: #a0b7fc;/* .purple-text link state */
+  --color-text-accent-pink: #ff9dad;/* #maya-temp */
+
+  /* ---- UI accents ---- */
+  --color-menu-btn-text: #b8c5c0;      /* mobile menu button + content-border-box shadow */
+  --color-heading-bg: #5a755a;         /* content-border-box h4 background */
+  --color-focus-outline: #6aa7ff;      /* photo grid focus ring */
+  --color-hover-shadow: #848484;       /* prev-issue img hover shadow */
+
+  /* ---- Sticky notes (bg + border pairs, one per nav section) ---- */
+  --color-note-homepage-bg: #d08e99;
+  --color-note-homepage-border: #6f4e53;
+
+  --color-note-archives-bg: #dbbc83;
+  --color-note-archives-border: #c58a1b;
+
+  --color-note-about-bg: #a4cba7;
+  --color-note-about-border: #5a755a;
+
+  --color-note-joinus-bg: #c0aad2;
+  --color-note-joinus-border: #856b9a;
+
+  --color-note-hover-bg: #ffefb5; /* shared hover state for all notes */
+
+  /* ---- Shared shadows ---- */
+  --shadow-panel: -6px 6px 5px rgba(0, 0, 0, 0.2);
+  --shadow-note: -6px 6px 6px rgba(0, 0, 0, 0.2);
+  --shadow-note-hover: -6px 6px 6px rgba(82, 82, 82, 0.2);
+  --shadow-photo: 0 10px 14px rgba(20, 20, 20, 0.2);
+  --shadow-photo-hover: 0 12px 24px rgba(0, 0, 0, 0.25);
+
+  /* ---- Shared radii ---- */
+  --radius-sm: 10px;
+  --radius-lg: 30px;
+}
