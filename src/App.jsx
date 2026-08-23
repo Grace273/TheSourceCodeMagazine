@@ -2,107 +2,34 @@ import { useState } from "react";
 import "./App.css";
 import StartPage from "./components/pages/StartPage";
 import AboutPage from "./components/pages/AboutPage";
-import JoinUsPage from "./components/pages/JoinUsPage";
 import ArchivesPage from "./components/pages/ArchivesPage";
-import MenuPage from "./components/pages/MenuPage";
 
 function App() {
-  const [homePageVisible, setHomePageVisibility] = useState(true);
-  const [aboutPageVisible, setAboutPageVisibility] = useState(false);
-  const [joinUsPageVisible, setJoinUsPageVisibility] = useState(false);
-  const [archivesPageVisible, setArchivesPageVisibility] = useState(false);
-  const [menuPageVisible, setMenuPageVisibility] = useState(false);
+  const [page, setPage] = useState("home");
 
   const showHome = () => {
-    if (setHomePageVisibility) {
-      window.location.reload();
-    }
-    setHomePageVisibility(true);
-    setAboutPageVisibility(false);
-    setJoinUsPageVisibility(false);
-    setArchivesPageVisibility(false);
-    setMenuPageVisibility(false);
+    window.location.reload();
   };
 
   const showAbout = () => {
-    setHomePageVisibility(false);
-    setAboutPageVisibility(true);
-    setJoinUsPageVisibility(false);
-    setArchivesPageVisibility(false);
-    setMenuPageVisibility(false);
-  };
-
-  const showJoinUs = () => {
-    setHomePageVisibility(false);
-    setAboutPageVisibility(false);
-    setJoinUsPageVisibility(true);
-    setArchivesPageVisibility(false);
-    setMenuPageVisibility(false);
+    setPage("about");
   };
 
   const showArchives = () => {
-    setHomePageVisibility(false);
-    setAboutPageVisibility(false);
-    setJoinUsPageVisibility(false);
-    setArchivesPageVisibility(true);
-    setMenuPageVisibility(false);
+    setPage("archive");
   };
 
-  const showMenuPage = () => {
-    setHomePageVisibility(false);
-    setAboutPageVisibility(false);
-    setJoinUsPageVisibility(false);
-    setArchivesPageVisibility(false);
-    setMenuPageVisibility(true);
-    console.log("click");
+  const navProps = {
+    onClickHomepage: showHome,
+    onClickAbout: showAbout,
+    onClickArchives: showArchives,
   };
 
   return (
     <>
-      {homePageVisible && (
-        <StartPage
-          onClickHomepage={showHome}
-          onClickAbout={showAbout}
-          onClickJoinUs={showJoinUs}
-          onClickArchives={showArchives}
-          onClickMenu={showMenuPage}
-        />
-      )}
-      {aboutPageVisible && (
-        <AboutPage
-          onClickHomepage={showHome}
-          onClickAbout={showAbout}
-          onClickJoinUs={showJoinUs}
-          onClickArchives={showArchives}
-          onClickMenu={showMenuPage}
-        />
-      )}
-      {joinUsPageVisible && (
-        <JoinUsPage
-          onClickHomepage={showHome}
-          onClickAbout={showAbout}
-          onClickJoinUs={showJoinUs}
-          onClickArchives={showArchives}
-          onClickMenu={showMenuPage}
-        />
-      )}
-      {archivesPageVisible && (
-        <ArchivesPage
-          onClickHomepage={showHome}
-          onClickAbout={showAbout}
-          onClickJoinUs={showJoinUs}
-          onClickArchives={showArchives}
-          onClickMenu={showMenuPage}
-        />
-      )}
-      {menuPageVisible && (
-        <MenuPage
-          onClickHomepage={showHome}
-          onClickAbout={showAbout}
-          onClickJoinUs={showJoinUs}
-          onClickArchives={showArchives}
-        />
-      )}
+      {page === "home" && <StartPage {...navProps} />}
+      {page === "about" && <AboutPage {...navProps} />}
+      {page === "archive" && <ArchivesPage {...navProps} />}
     </>
   );
 }
