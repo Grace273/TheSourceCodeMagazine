@@ -1,7 +1,9 @@
+@import "./theme.css";
+
 body {
-  font-family: "Rock Salt", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
-  background-color: #2C2930;
+  background-color: var(--color-bg);
 }
 
 footer {
@@ -30,7 +32,7 @@ a:active {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    background-color: #2C2930;
+    background-color: var(--color-bg);
     width: 100%;
     height: 100vh;
     overflow: visible;
@@ -48,10 +50,10 @@ a:active {
     display: flex;
     align-self: flex-start;
     font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #b8c5c0;
-    background-color: #2C2930;
-    border-radius: 10px;
+    font-family: var(--font-body);
+    color: var(--color-menu-btn-text);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-sm);
     font-weight: 500;
     text-shadow: 2px 1px 5px black;
     margin-left: 3%;
@@ -77,7 +79,7 @@ a:active {
     justify-content: start; 
     align-items: center; 
 
-    box-shadow: -6px 6px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-panel);
 
     @media (width <=60em) {
         width: 100vw;
@@ -111,15 +113,15 @@ a:active {
 }
 
 .content-border-box {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-body);
     font-size: 1.2rem;
     margin-top: 5%;
     text-align: center;
     padding: 10px 20px;
-    color: #d4cecc;
-    background-color: #2C2930;
-    box-shadow: 10px 10px #b8c5c0;
-    border-radius: 10px;
+    color: var(--color-text-body);
+    background-color: var(--color-bg);
+    box-shadow: 10px 10px var(--color-menu-btn-text);
+    border-radius: var(--radius-sm);
     width: 80%;
     z-index: 2;
 
@@ -131,7 +133,7 @@ a:active {
 .content-border-box h4 {
     text-align: center;
     margin: 0;
-    background-color: #5a755a;
+    background-color: var(--color-heading-bg);
     padding: 10px 0;
 }
 
@@ -159,8 +161,8 @@ a:active {
     background-image: url('./assets/images/bg-images/watermarble.jpg');
     background-repeat: repeat;
     opacity: 0.9;
-    border-radius: 30px;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    border-radius: var(--radius-lg);
+    box-shadow: 0px 0px 20px var(--color-black);
 
 }
 
@@ -188,9 +190,9 @@ a:active {
 .purple-text {
     margin: 2% 15%;
     margin-bottom: 2%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-body);
     font-size: 1.2rem;
-    color: #96a2c9;
+    color: var(--color-text-purple);
     text-align: center;
 
     @media (width <= 60em) {
@@ -203,7 +205,7 @@ a:active {
 .purple-text:link,
 .purple-text:visited,
 .purple-text:active {
-  color: #a0b7fc;;
+  color: var(--color-text-purple-link);
   font-size: 1.3rem;
 }
 
@@ -215,7 +217,7 @@ a:active {
 
 
 .note {
-    color: #151515;
+    color: var(--color-near-black);
     margin-left: 10%;
     height: 40px;
     margin-bottom: 10px;
@@ -224,7 +226,7 @@ a:active {
     padding-right: 50px;
     padding-left: 40px;
     border-radius: 30px 0 0 60px;
-    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-note);
     transition: transform 0.3s ease, background-color 0.2s ease;
     cursor: pointer;
     z-index: 1;
@@ -240,50 +242,50 @@ a:active {
 
 .note:hover, .note-menu:hover {
     transform: translateX(30px);
-    background-color: #ffefb5;
-    box-shadow: -6px 6px 6px rgba(82, 82, 82, 0.2);
+    background-color: var(--color-note-hover-bg);
+    box-shadow: var(--shadow-note-hover);
 }
 
 
-#homepage-note { 
-    background-color: #d08e99;
-    border: 5px solid #6f4e53;
+#homepage-note {
+    background-color: var(--color-note-homepage-bg);
+    border: 5px solid var(--color-note-homepage-border);
     border-right: none;
 
     @media (width <= 60em) {
-        border: 5px solid #6f4e53;
+        border: 5px solid var(--color-note-homepage-border);
     }
 }
 
 
-#archives-note { 
-    background-color: #dbbc83;
-    border: 5px solid #c58a1b;
+#archives-note {
+    background-color: var(--color-note-archives-bg);
+    border: 5px solid var(--color-note-archives-border);
     border-right: none;
 
     @media (width <= 60em) {
-        border: 5px solid #c58a1b;
+        border: 5px solid var(--color-note-archives-border);
     }
 }
 
 #about-note {
-    background-color: #a4cba7; 
-    border: 5px solid #5a755a;
+    background-color: var(--color-note-about-bg);
+    border: 5px solid var(--color-note-about-border);
     border-right: none;
 
     @media (width <= 60em) {
-        border: 5px solid #5a755a;
+        border: 5px solid var(--color-note-about-border);
     }
 }
 
-#join-us-note { 
-    background-color: #c0aad2; 
-    border: 5px solid #856b9a;
+#join-us-note {
+    background-color: var(--color-note-joinus-bg);
+    border: 5px solid var(--color-note-joinus-border);
     border-right: none;
     font-size: 88%;
 
     @media (width <= 60em) {
-        border: 5px solid #856b9a;
+        border: 5px solid var(--color-note-joinus-border);
     }
 }
 
@@ -320,13 +322,13 @@ a:active {
 
 #footer {
     margin-bottom: 5%;
-    color: #C5BBB8;
+    color: var(--color-text-muted);
 }
 
 /* ABOUT PAGE */
 #meet-the-team-text {
     margin: 3rem auto;
-    color: #C5BBB8;
+    color: var(--color-text-muted);
     text-shadow: 2px 1px 5px rgb(39, 39, 39);
 }
 
@@ -347,11 +349,11 @@ a:active {
     object-fit: cover;
     display: block;
     border-radius: 8px;
-    box-shadow: 0 10px 14px rgba(20,20,20,0.2);
+    box-shadow: var(--shadow-photo);
 }
 
 .photo-grid a:focus img{
-    outline: 3px solid #6aa7ff;
+    outline: 3px solid var(--color-focus-outline);
     outline-offset: 4px;
 }
 
@@ -361,12 +363,12 @@ a:active {
 
 .photo-grid img:hover {
     transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-photo-hover);
     cursor: default;
 }
 
 #maya-temp {
-    color:#ff9dad;
+    color: var(--color-text-accent-pink);
     text-align: center;
 
     @media (width <= 60em) {
@@ -392,14 +394,14 @@ a:active {
     width: 88%;
     background-image: url("./assets/images/bg-images/watermarble.jpg");
     background-blend-mode: lighten;
-    border-radius: 30px;
+    border-radius: var(--radius-lg);
 }
 
 #archives-bg-overlay{
     display: block;
     margin: 2rem 4rem;
-    background-color: #2C2930;
-    border-radius: 30px;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-lg);
 }
 
 .prev-issue {
@@ -409,18 +411,18 @@ a:active {
     margin: 2rem 2rem;
 }
 .prev-issue img {
-    box-shadow: 0px 0px 20px #000000;
+    box-shadow: 0px 0px 20px var(--color-black);
 
     @media (width <= 60em) {
         width: 90%;
     }
 }
 .prev-issue img:hover {
-    box-shadow: 0px 0px 20px #848484;
+    box-shadow: 0px 0px 20px var(--color-hover-shadow);
 }
 .prev-issue p {
     font-size: 1rem;
-    color: #C5BBB8;
+    color: var(--color-text-muted);
 }
 
 /* MENU FOR MOBILE PAGE */
@@ -432,11 +434,11 @@ a:active {
 }
 
 .note-menu {
-    color: #151515;
+    color: var(--color-near-black);
     margin: 5% auto;
     height: fit-content;
     width: 90%;
-    border-radius: 30px;
+    border-radius: var(--radius-lg);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 10px 10px;
