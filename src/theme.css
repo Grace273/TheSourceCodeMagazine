@@ -18,32 +18,31 @@
   /* ---- Breakpoints (see note above — not directly usable in @media) ---- */
   --breakpoint-mobile: 60em;
 
-  /* ---- Core palette ---- */
-  --color-bg: #2C2930;           /* page/panel background */
+  /* ---- Core palette (grayscale placeholder theme) ---- */
+  --color-bg: #2b2b2b;           /* page/panel background */
   --color-black: #000000;
-  --color-near-black: #151515;   /* sticky note text */
+  --color-near-black: #141414;   /* sticky note text */
 
   /* ---- Text ---- */
-  --color-text-body: #d4cecc;       /* content-border-box copy */
-  --color-text-muted: #C5BBB8;      /* footer, meet-the-team, archives captions */
-  --color-text-purple: #96a2c9;     /* .purple-text */
-  --color-text-purple-link: #a0b7fc;/* .purple-text link state */
-  --color-text-accent-pink: #ff9dad;/* #maya-temp */
+  --color-text-body: #d9d9d9;       /* content-border-box copy */
+  --color-text-muted: #bfbfbf;      /* footer, meet-the-team, archives captions */
+  --color-text-purple: #a6a6a6;     /* .purple-text */
+  --color-text-purple-link: #c2c2c2;/* .purple-text link state */
 
   /* ---- UI accents ---- */
-  --color-menu-btn-text: #b8c5c0;      /* nav hamburger icon + content-border-box shadow */
-  --color-heading-bg: #5a755a;         /* content-border-box h4 background */
-  --color-focus-outline: #6aa7ff;      /* photo grid focus ring */
+  --color-menu-btn-text: #bfbfbf;      /* nav hamburger icon + content-border-box shadow */
+  --color-heading-bg: #707070;         /* content-border-box h4 background */
+  --color-focus-outline: #e6e6e6;      /* photo grid focus ring */
   --color-hover-shadow: #848484;       /* prev-issue img hover shadow */
 
   /* ---- Navbar link accents (one per page) ---- */
-  --color-nav-archives-bg: #dbbc83;
-  --color-nav-archives-border: #c58a1b;
+  --color-nav-archives-bg: #d4d4d4;
+  --color-nav-archives-border: #8c8c8c;
 
-  --color-nav-about-bg: #a4cba7;
-  --color-nav-about-border: #5a755a;
+  --color-nav-about-bg: #bcbcbc;
+  --color-nav-about-border: #707070;
 
-  --color-nav-link-hover-bg: #ffefb5; /* shared hover state for all nav links */
+  --color-nav-link-hover-bg: #f0f0f0; /* shared hover state for all nav links */
 
   /* ---- Shared shadows ---- */
   --shadow-panel: -6px 6px 5px rgba(0, 0, 0, 0.2);

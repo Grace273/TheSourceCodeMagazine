@@ -2,7 +2,6 @@ import BackgroundOverlay from "../BackgroundOverlay";
 import Nav from "../Nav";
 import MeetTheTeam from "../MeetTheTeam";
 import Footer from "../Footer";
-import joinUsImg from "../../assets/images/join-us.jpg";
 
 const AboutPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
   return (
@@ -16,20 +15,16 @@ const AboutPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
         <BackgroundOverlay onClickLogo={onClickHomepage} />
         <div className="content-border-box">
           <p>
-            Established in 2025, The Source Code is UofT's newest Computer
-            Science Magazine! Our team and contributors come from a wide range
-            of programs and backgrounds. In our zines, you'll find
-            student-written pieces ranging from reflections on AI ethics and the
-            impact of big tech's latest moves to spotlights on student stories
-            and cool side projects.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
           </p>
           <br />
           <br />
           <p>Instagram</p>{" "}
           <u>
-            <a href="https://www.instagram.com/thesourcecodemagazine/ ">
-              @thesourcecodemagazine
-            </a>
+            <a href="#">@placeholder-handle</a>
           </u>{" "}
           <br />
           <br />
@@ -37,29 +32,22 @@ const AboutPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
         <h1 id="meet-the-team-text">MEET THE TEAM</h1>
         <MeetTheTeam />
 
-        <img id="join-us-img" src={joinUsImg} alt="Join Us text" width="100%" />
+        <h1 id="join-us-text">JOIN US</h1>
 
         <div className="content-border-box">
           <p>
-            <b>
-              Interested in contributing to the next issue? Contribute your
-              ideas with{" "}
-            </b>
+            <b>Interested in contributing to the next issue? Reach out via </b>
             <br />
             <u>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEIO-XsQfqslDj9tHfJVGStxUMDNaOVgzMDRLTUxVVzhOMFhUNk1GRTkxUi4u">
-                this Microsoft Form
-              </a>
+              <a href="#">this sign-up form</a>
             </u>{" "}
-            and visit the linktree in our instagram{" "}
+            and follow the link in our{" "}
             <u>
-              <a href="https://www.instagram.com/thesourcecodemagazine/ ">
-                @thesourcecodemagazine
-              </a>
+              <a href="#">@placeholder-handle</a>
             </u>{" "}
-            to join our Discord!
+            bio to join our community chat!
             <br />
-            <br /> We want to platform your voice to UofT!
+            <br /> Placeholder call-to-action text goes here.
           </p>
         </div>
 

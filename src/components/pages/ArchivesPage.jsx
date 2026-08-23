@@ -14,7 +14,7 @@ const ArchivesPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
         <BackgroundOverlay onClickLogo={onClickHomepage} />
 
         <div className="content-border-box">
-          <p>The Source Code: Archives</p>
+          <p>[Publication Name]: Archives</p>
         </div>
 
         <div id="archives">
@@ -27,7 +27,7 @@ const ArchivesPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
                   width="30%"
                 />
               </a>
-              <p>October 2025</p>
+              <p>[Issue date]</p>
             </div>
           </div>
         </div>
