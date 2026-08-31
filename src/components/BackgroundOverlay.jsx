@@ -1,15 +1,7 @@
-import logo from "../assets/images/logo.png";
-import rippedCorner from "../assets/images/bg-images/ripped-corner.png";
-import rippedPage from "../assets/images/bg-images/ripped-page.png";
+import logo from "../assets/images/logo-placeholder.svg";
 
 const BackgroundOverlay = ({ onClickLogo }) => {
-  return (
-    <>
-      <img id="logo" alt="logo" src={logo} width="100%" onClick={onClickLogo} />
-      <img id="ripped-page" alt="ripped page" src={rippedPage} />
-      <img id="ripped-corner" alt="ripped page" src={rippedCorner} />
-    </>
-  );
+  return <img id="logo" alt="Site logo placeholder" src={logo} width="100%" onClick={onClickLogo} />;
 };
 
 export default BackgroundOverlay;

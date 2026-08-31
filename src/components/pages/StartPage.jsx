@@ -17,7 +17,7 @@ const StartPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
         <BackgroundOverlay onClickLogo={onClickHomepage} />
 
         <div className="content-border-box">
-          <h3>Read Our Latest: Volume 1 Issue 1</h3>
+          <h3>Read Our Latest: [Issue Title]</h3>
         </div>
 
         <div id="flipbook-container">
@@ -45,10 +45,9 @@ const StartPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
             </h4>
             <br />
             <br />
-            * 01/2026: Issue 2 is coming March 2026! New writers welcome!
+            * [Placeholder date]: [Placeholder update text goes here]
             <br />
-            <br />* 08/2025: Find copies of our latest issue in the CSSU
-            (BA2250)
+            <br />* [Placeholder date]: [Placeholder update text goes here]
           </p>
         </div>
 

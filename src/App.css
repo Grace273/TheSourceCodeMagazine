@@ -140,11 +140,12 @@ a:active {
 /* MAIN COLUMN */
 .main {
     position: relative;
-    background-image:url('./assets/images/bg-images/main-background.png');
-    background-size: cover;
+    background-color: var(--color-bg);
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     flex: 1;
     z-index: 10;
     justify-content: start;
@@ -225,8 +226,7 @@ a:active {
     margin-top: 6%;
     width: auto;
     padding: 30px 0;
-    background-image: url('./assets/images/bg-images/watermarble.jpg');
-    background-repeat: repeat;
+    background-color: #3d3d3d;
     opacity: 0.9;
     border-radius: var(--radius-lg);
     box-shadow: 0px 0px 20px var(--color-black);
@@ -276,37 +276,6 @@ a:active {
   font-size: 1.3rem;
 }
 
-#ripped-page {
-    position: absolute;
-    right: 0;
-    z-index: 1;
-
-    @media (width <=60em) {
-        width: 45%;
-        height: 200px;
-        z-index: -2;
-        opacity: 0.7;
-    }
-}
-
-#ripped-corner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-    width: 40%;
-    opacity: 0.8;
-
-    @media (width <=60em) {
-        width: 45%;
-        z-index: -2;
-        opacity: 0.7;
-        height: 150px;
-    }
-}
-
 #footer {
     margin-bottom: 5%;
     color: var(--color-text-muted);
@@ -354,23 +323,11 @@ a:active {
     cursor: default;
 }
 
-#maya-temp {
-    color: var(--color-text-accent-pink);
-    text-align: center;
-
-    @media (width <= 60em) {
-        font-size: 10px;
-    }
-}
-
 /* ABOUT PAGE - JOIN US SECTION */
-#join-us-img {
-    margin-top: 10%;
-    width: 50%;
-
-    @media (width <= 60em) {
-        width: 90%;
-    }
+#join-us-text {
+    margin: 3rem auto 0;
+    color: var(--color-text-muted);
+    text-shadow: 2px 1px 5px rgb(39, 39, 39);
 }
 
 /* ARCHIVES PAGE */
@@ -379,8 +336,7 @@ a:active {
     text-align: center;
     margin: 2rem 0;
     width: 88%;
-    background-image: url("./assets/images/bg-images/watermarble.jpg");
-    background-blend-mode: lighten;
+    background-color: #3d3d3d;
     border-radius: var(--radius-lg);
 }
 

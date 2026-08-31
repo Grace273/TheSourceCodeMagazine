@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo-placeholder.svg";
 
 const Nav = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const Nav = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
         className="nav-brand"
         onClick={() => handleNavClick(onClickHomepage)}
       >
-        <img id="nav-logo" alt="The Source Code logo" src={logo} />
+        <img id="nav-logo" alt="Site logo placeholder" src={logo} />
       </a>
 
       <button
