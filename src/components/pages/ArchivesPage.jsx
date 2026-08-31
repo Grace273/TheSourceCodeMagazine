@@ -2,27 +2,15 @@ import BackgroundOverlay from "../BackgroundOverlay";
 import Nav from "../Nav";
 import Footer from "../Footer";
 
-const ArchivesPage = ({
-  onClickHomepage,
-  onClickAbout,
-  onClickJoinUs,
-  onClickArchives,
-  onClickMenu,
-}) => {
+const ArchivesPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
   return (
-    <div className="body grid-container">
+    <div className="page">
       <Nav
         onClickHomepage={onClickHomepage}
         onClickAbout={onClickAbout}
-        onClickJoinUs={onClickJoinUs}
         onClickArchives={onClickArchives}
       />
       <div className="main">
-        {/* For mobile */}
-        <button id="menu-btn">
-          <a onClick={onClickMenu}>◄ Menu</a>
-        </button>
-
         <BackgroundOverlay onClickLogo={onClickHomepage} />
 
         <div className="content-border-box">

@@ -1,27 +1,52 @@
-const nav = ({
-  onClickHomepage,
-  onClickAbout,
-  onClickJoinUs,
-  onClickArchives,
-}) => {
+import { useState } from "react";
+import logo from "../assets/images/logo.png";
+
+const Nav = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleNavClick = (handler) => {
+    setMenuOpen(false);
+    handler();
+  };
+
   return (
-    <>
-      <div className="sticky-notes">
-        <div className="note" id="homepage-note" onClick={onClickHomepage}>
-          <p>HOME</p>
-        </div>
-        <div className="note" id="about-note" onClick={onClickAbout}>
-          <p>ABOUT</p>
-        </div>
-        <div className="note" id="join-us-note" onClick={onClickJoinUs}>
-          JOIN US
-        </div>
-        <div className="note" id="archives-note" onClick={onClickArchives}>
-          <p>ARCHIVES</p>
-        </div>
+    <nav className="navbar">
+      <a
+        className="nav-brand"
+        onClick={() => handleNavClick(onClickHomepage)}
+      >
+        <img id="nav-logo" alt="The Source Code logo" src={logo} />
+      </a>
+
+      <button
+        className="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen((open) => !open)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <div className={`nav-links${menuOpen ? " open" : ""}`}>
+        <a
+          className="nav-link"
+          id="about-link"
+          onClick={() => handleNavClick(onClickAbout)}
+        >
+          About Us
+        </a>
+        <a
+          className="nav-link"
+          id="archive-link"
+          onClick={() => handleNavClick(onClickArchives)}
+        >
+          Archive
+        </a>
       </div>
-    </>
+    </nav>
   );
 };
 
-export default nav;
+export default Nav;
