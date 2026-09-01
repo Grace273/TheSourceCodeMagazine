@@ -1,6 +1,7 @@
 import BackgroundOverlay from "../BackgroundOverlay";
 import Nav from "../Nav";
 import Footer from "../Footer";
+import issues from "../../data/archiveIssues.json";
 
 const ArchivesPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
   return (
@@ -17,19 +18,20 @@ const ArchivesPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
           <p>[Publication Name]: Archives</p>
         </div>
 
-        <div id="archives">
-          <div id="archives-bg-overlay">
-            <div class="prev-issue">
-              <a href="/magazine-issues/issue1/issue1-ordered.pdf">
-                <img
-                  src="magazine-issues/issue1/front-cover.jpg"
-                  alt="Cover of First issue"
-                  width="30%"
-                />
-              </a>
-              <p>[Issue date]</p>
-            </div>
-          </div>
+        <div className="archive-grid">
+          {issues.map(({ id, title, date, cover, pdf }) => (
+            <a key={id} className="archive-card" href={pdf}>
+              {cover ? (
+                <img src={cover} alt={`Cover of ${title}`} />
+              ) : (
+                <div className="archive-cover-placeholder" aria-hidden="true" />
+              )}
+              <p>
+                <b>{title}</b>
+              </p>
+              <p>{date}</p>
+            </a>
+          ))}
         </div>
 
         <Footer />

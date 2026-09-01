@@ -1,0 +1,44 @@
+[
+  {
+    "id": "issue1",
+    "title": "Issue 1",
+    "date": "[Issue date]",
+    "cover": "magazine-issues/issue1/front-cover.jpg",
+    "pdf": "magazine-issues/issue1/issue1-ordered.pdf"
+  },
+  {
+    "id": "placeholder-2",
+    "title": "[Issue Title]",
+    "date": "[Issue date]",
+    "cover": null,
+    "pdf": "#"
+  },
+  {
+    "id": "placeholder-3",
+    "title": "[Issue Title]",
+    "date": "[Issue date]",
+    "cover": null,
+    "pdf": "#"
+  },
+  {
+    "id": "placeholder-4",
+    "title": "[Issue Title]",
+    "date": "[Issue date]",
+    "cover": null,
+    "pdf": "#"
+  },
+  {
+    "id": "placeholder-5",
+    "title": "[Issue Title]",
+    "date": "[Issue date]",
+    "cover": null,
+    "pdf": "#"
+  },
+  {
+    "id": "placeholder-6",
+    "title": "[Issue Title]",
+    "date": "[Issue date]",
+    "cover": null,
+    "pdf": "#"
+  }
+]
