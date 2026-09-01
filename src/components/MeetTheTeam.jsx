@@ -8,10 +8,14 @@ const team = [
   { seed: 7, name: "Team Member 7", role: "Role Title" },
 ];
 
-const MeetTheTeam = () => {
+const CONDENSED_COUNT = 3;
+
+const MeetTheTeam = ({ condensed = false }) => {
+  const members = condensed ? team.slice(0, CONDENSED_COUNT) : team;
+
   return (
-    <section class="photo-grid">
-      {team.map(({ seed, name, role }) => (
+    <section className={`photo-grid${condensed ? " photo-grid-condensed" : ""}`}>
+      {members.map(({ seed, name, role }) => (
         <img
           key={seed}
           src={`https://picsum.photos/seed/${seed}/800/600?grayscale`}

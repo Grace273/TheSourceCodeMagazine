@@ -150,8 +150,6 @@ a:active {
     z-index: 10;
     justify-content: start;
     align-items: center;
-
-    box-shadow: var(--shadow-panel);
 }
 
 #logo {
@@ -282,10 +280,17 @@ a:active {
 }
 
 /* ABOUT PAGE */
+#about-us-text,
+#substack-text,
 #meet-the-team-text {
     margin: 3rem auto;
     color: var(--color-text-muted);
     text-shadow: 2px 1px 5px rgb(39, 39, 39);
+}
+
+.photo-grid-condensed {
+    width: 60%;
+    max-width: 600px;
 }
 
 .photo-grid {
