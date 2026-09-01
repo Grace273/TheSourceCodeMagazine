@@ -16,12 +16,10 @@ const MeetTheTeam = ({ condensed = false }) => {
   return (
     <section className={`photo-grid${condensed ? " photo-grid-condensed" : ""}`}>
       {members.map(({ seed, name, role }) => (
-        <img
-          key={seed}
-          src={`https://picsum.photos/seed/${seed}/800/600?grayscale`}
-          alt={`${role} ${name}`}
-          width="100%"
-        />
+        <div key={seed} className="photo-placeholder">
+          <p className="photo-placeholder-name">{name}</p>
+          <p className="photo-placeholder-role">{role}</p>
+        </div>
       ))}
     </section>
   );
