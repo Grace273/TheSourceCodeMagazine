@@ -2,16 +2,12 @@ import BackgroundOverlay from "../BackgroundOverlay";
 import Nav from "../Nav";
 import Footer from "../Footer";
 
-const ArchivesPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
+const ArchivesPage = () => {
   return (
     <div className="page">
-      <Nav
-        onClickHomepage={onClickHomepage}
-        onClickAbout={onClickAbout}
-        onClickArchives={onClickArchives}
-      />
+      <Nav />
       <div className="main">
-        <BackgroundOverlay onClickLogo={onClickHomepage} />
+        <BackgroundOverlay to="/" />
 
         <div className="content-border-box">
           <p>[Publication Name]: Archives</p>

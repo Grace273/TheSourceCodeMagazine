@@ -1,22 +1,17 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo-placeholder.svg";
 
-const Nav = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
+const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleNavClick = (handler) => {
-    setMenuOpen(false);
-    handler();
-  };
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className="navbar">
-      <a
-        className="nav-brand"
-        onClick={() => handleNavClick(onClickHomepage)}
-      >
+      <Link className="nav-brand" to="/" onClick={closeMenu}>
         <img id="nav-logo" alt="Site logo placeholder" src={logo} />
-      </a>
+      </Link>
 
       <button
         className="nav-toggle"
@@ -24,26 +19,26 @@ const Nav = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
         aria-expanded={menuOpen}
         onClick={() => setMenuOpen((open) => !open)}
       >
-        <span />
-        <span />
-        <span />
+        
       </button>
 
       <div className={`nav-links${menuOpen ? " open" : ""}`}>
-        <a
+        <NavLink
           className="nav-link"
           id="about-link"
-          onClick={() => handleNavClick(onClickAbout)}
+          to="/about"
+          onClick={closeMenu}
         >
           About Us
-        </a>
-        <a
+        </NavLink>
+        <NavLink
           className="nav-link"
           id="archive-link"
-          onClick={() => handleNavClick(onClickArchives)}
+          to="/archives"
+          onClick={closeMenu}
         >
           Archive
-        </a>
+        </NavLink>
       </div>
     </nav>
   );

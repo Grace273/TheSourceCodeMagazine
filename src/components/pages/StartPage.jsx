@@ -5,16 +5,12 @@ import Nav from "../Nav";
 import Flipbook from "../HomepageFlipbook";
 import Footer from "../Footer";
 
-const StartPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
+const StartPage = () => {
   return (
     <div className="page">
-      <Nav
-        onClickHomepage={onClickHomepage}
-        onClickAbout={onClickAbout}
-        onClickArchives={onClickArchives}
-      />
+      <Nav />
       <div className="main">
-        <BackgroundOverlay onClickLogo={onClickHomepage} />
+        <BackgroundOverlay to="/" />
 
         <div className="content-border-box">
           <h3>Read Our Latest: [Issue Title]</h3>

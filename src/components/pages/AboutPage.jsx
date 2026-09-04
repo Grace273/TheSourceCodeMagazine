@@ -3,16 +3,12 @@ import Nav from "../Nav";
 import MeetTheTeam from "../MeetTheTeam";
 import Footer from "../Footer";
 
-const AboutPage = ({ onClickHomepage, onClickAbout, onClickArchives }) => {
+const AboutPage = () => {
   return (
     <div className="page">
-      <Nav
-        onClickHomepage={onClickHomepage}
-        onClickAbout={onClickAbout}
-        onClickArchives={onClickArchives}
-      />
+      <Nav />
       <div className="main">
-        <BackgroundOverlay onClickLogo={onClickHomepage} />
+        <BackgroundOverlay to="/" />
 
         <p className="purple-text">
           [Placeholder tagline goes here]
