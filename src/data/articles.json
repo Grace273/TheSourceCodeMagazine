@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ideas",
+    "title": "Our First Publication",
+    "image": "https://substackcdn.com/image/fetch/$s_!_mTc!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff8fb5e85-e952-4b3e-a60b-b9526bd2b57f_962x1526.png",
+    "url": "https://thesourcecodemag.substack.com/p/the-source-code-introduction-article?r=bdhso&utm_medium=ios&utm_source=notes-share-action"
+  },
+  {
+    "id": "computing",
+    "title": "article 2",
+    "image": "/images/article-computing.jpg",
+    "url": "https://example.com/replace-with-article-2"
+  },
+  {
+    "id": "community",
+    "title": "article 3",
+    "image": "/images/article-community.jpg",
+    "url": "https://example.com/replace-with-article-3"
+  }
+]

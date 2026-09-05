@@ -12,12 +12,14 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "fetch-previews": "node scripts/fetch-og-previews.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-pageflip": "^2.0.3"
+    "react-pageflip": "^2.0.3",
+    "react-router-dom": "^7.18.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

@@ -7,7 +7,7 @@ body {
 }
 
 footer {
-    margin: 4rem auto;
+    margin: 4rem auto 0;
 
     @media (width <= 60em) {
         font-size: 20%;
